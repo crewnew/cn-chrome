@@ -1,1 +1,1 @@
-# cn-chrome
+https://crnw.uk/chrome

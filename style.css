@@ -1,5 +1,11 @@
 body {
     background-color: #42375b;
+    text-align: right;
+    font-family: Gibbs, sans-serif;
+    word-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: 200;
+    line-height: 1;
 }
 
 a {

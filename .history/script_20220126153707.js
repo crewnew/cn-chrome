@@ -2,7 +2,7 @@
 // I had to use interval to check all the time if url changes and later on add changes
 
 // Initial clear url
-let url = "google.com";
+let url = "";
 // Create div on init
 const userDiv = document.createElement("div");
 

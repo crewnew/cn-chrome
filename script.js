@@ -25,20 +25,15 @@ setInterval(() => {
   // Checkers
   const isLinkedin = window.location.href.includes("linkedin.com/in");
   const isUpwork = window.location.href.includes("upwork.com/freelancers/");
-
-  console.log("1");
+  const isFreelancer = window.location.href.includes("freelancer.com/u");
 
   // Check if url changed and if it is linkedin or upwork
   if (url !== window.location.href && (isLinkedin || isUpwork)) {
-    console.log("2");
-
     userDiv.style.display = "none";
 
     url = window.location.href;
 
     if (isLinkedin) {
-      console.log("3");
-
       // Format linkedin url, remove subdomain and http, www
       let formattedUrl = `linkedin${window.location.href.split("linkedin")[1]}`;
 
@@ -51,6 +46,15 @@ setInterval(() => {
     if (isUpwork) {
       // Format upwork url, remove subdomain and http, www
       const formattedUrl = `upwork${window.location.href.split("upwork")[1]}`;
+
+      fetchDataAndSetPopupInformation(formattedUrl);
+    }
+
+    if (isFreelancer) {
+      // Format upwork url, remove subdomain and http, www
+      const formattedUrl = `freelancer${
+        window.location.href.split("freelancer")[1]
+      }`;
 
       fetchDataAndSetPopupInformation(formattedUrl);
     }

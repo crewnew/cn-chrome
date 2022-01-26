@@ -3,6 +3,9 @@
   "description": "Check if the URL exists in CrewNew DB",
   "version": "1.0",
   "manifest_version": 2,
+  "background": {
+    "service_worker": "background.js"
+  },
   "permissions": ["tabs"],
   "content_scripts": [
     {

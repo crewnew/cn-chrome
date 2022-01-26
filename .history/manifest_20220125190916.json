@@ -1,0 +1,13 @@
+{
+    "name": "CrewNew Check",
+    "description": "Check if the URL exists in CrewNew DB",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://*.nytimes.com/*"],
+          "css": ["my-styles.css"],
+          "js": ["content-script.js"]
+        }
+      ]
+}

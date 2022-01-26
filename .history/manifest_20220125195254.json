@@ -1,0 +1,12 @@
+{
+    "name": "CrewNew Check",
+    "description": "Check if the URL exists in CrewNew DB",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://www.linkedin.com/in/*", "https://www.upwork.com/freelancers/*"],
+          "js": ["script.js"]
+        }
+      ]
+}

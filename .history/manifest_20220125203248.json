@@ -2,23 +2,18 @@
   "name": "CrewNew Check",
   "description": "Check if the URL exists in CrewNew DB",
   "version": "1.0",
-  "manifest_version": 2,
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
   "permissions": ["tabs"],
   "content_scripts": [
     {
       "matches": [
         "https://*.linkedin.com/in/*",
-        "https://*.upwork.com/freelancers/*"
+        "https://*upwork.com/freelancers/*"
       ],
       "js": ["script.js"]
     }
-  ],
-  "browser_action": {
-    "default_icon": "favicon.png"
-  },
-  "icons": {
-    "16": "favicon.png",
-    "48": "favicon.png",
-    "128": "favicon.png"
-  }
+  ]
 }

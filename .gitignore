@@ -1,2 +1,3 @@
 # Ignore local history file for backups
 .history
+.vscode/launch.json

@@ -38,7 +38,8 @@ setInterval(() => {
     if (isLinkedin) {
       // Format linkedin url, remove subdomain and http, www
       let formattedUrl = `linkedin${window.location.href.split("linkedin")[1]}`;
-
+      // Format linkedin url, remove everything after ?
+      formattedUrl = `${formattedUrl.split("?")[0]}`;
       // Cut last slash after user name
       formattedUrl = formattedUrl.substring(0, formattedUrl.length - 1);
 
@@ -47,16 +48,19 @@ setInterval(() => {
 
     if (isUpwork) {
       // Format upwork url, remove subdomain and http, www
-      const formattedUrl = `upwork${window.location.href.split("upwork")[1]}`;
-
+      let formattedUrl = `upwork${window.location.href.split("upwork")[1]}`;
+      // Format upwork url, remove everything after ?
+      formattedUrl = `${formattedUrl.split("?")[0]}`;
       fetchDataAndSetPopupInformation(formattedUrl);
     }
 
     if (isFreelancer) {
       // Format upwork url, remove subdomain and http, www
-      const formattedUrl = `freelancer${
+      let formattedUrl = `freelancer${
         window.location.href.split("freelancer")[1]
       }`;
+      // Format Freelancer url, remove everything after ?
+      formattedUrl = `${formattedUrl.split("?")[0]}`;
 
       fetchDataAndSetPopupInformation(formattedUrl);
     }

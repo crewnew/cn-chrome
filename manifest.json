@@ -9,7 +9,12 @@
       "matches": [
         "https://*.linkedin.com/*",
         "https://*.upwork.com/*",
-        "https://*.freelancer.com/*"
+        "https://*.freelancer.com/*",
+        "https://*.peopleperhour.com/*",
+        "https://*.angel.co/*",
+        "https://*.remotehub.com/*",
+        "https://*.stackoverflow.com/*",
+        "https://*.github.com/*"
       ],
       "js": ["script.js"]
     }

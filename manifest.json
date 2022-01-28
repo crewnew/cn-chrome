@@ -6,7 +6,11 @@
   "permissions": ["tabs"],
   "content_scripts": [
     {
-      "matches": ["https://*.linkedin.com/*", "https://*.upwork.com/*"],
+      "matches": [
+        "https://*.linkedin.com/*",
+        "https://*.upwork.com/*",
+        "https://*.freelancer.com/*"
+      ],
       "js": ["script.js"]
     }
   ],

@@ -1,6 +1,5 @@
 // Since linkedin doesn't really redirect after you click on any button there
 // I had to use interval to check all the time if url changes and later on add changes
-
 // Initial clear url
 let url = "google.com";
 // Create div on init
@@ -28,7 +27,10 @@ setInterval(() => {
   const isFreelancer = window.location.href.includes("freelancer.com/u");
 
   // Check if url changed and if it is linkedin or upwork
-  if (url !== window.location.href && (isLinkedin || isUpwork)) {
+  if (
+    url !== window.location.href &&
+    (isLinkedin || isUpwork || isFreelancer)
+  ) {
     userDiv.style.display = "none";
 
     url = window.location.href;
